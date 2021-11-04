@@ -64,13 +64,13 @@ templates.each_with_index do |t,i|
   puts "#{i}. [#{t[:exam]}] #{t[:name]}"
 end
 choice = gets.chomp
-src = templates[choice.to_i][:path]
+puts 'Input the markdown file:'
+src = 'src/' + gets.chomp
 exam = templates[choice.to_i][:exam]
 
 # Enter your OS id
-puts 'Enter your OS id'
-print 'OS-'
-osid = 'OS-' + gets.chomp
+puts 'Your OS id is OS-93614'
+osid = 'OS-93614'
 
 # Choose syntax highlight style
 style = 'breezedark'
